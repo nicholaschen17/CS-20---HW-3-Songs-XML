@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="stylesheet.css"?>
+<songs>
+ <song>
+    <title>Baby</title>
+    <artist>Justin Bieber</artist>
+    <genre>Pop</genre>
+ </song>
+ <song>
+    <title>Sorry</title>
+    <artist>Justin Bieber</artist>
+    <genre>Pop</genre>
+ </song>
+ <song>
+    <title>Lonely</title>
+    <artist>Justin Bieber</artist>
+    <genre>Pop</genre>
+ </song>
+ <song>
+    <title>Runaway</title>
+    <artist>Kanye</artist>
+    <genre>Rap</genre>
+ </song>
+ <song>
+    <title>Bound 2</title>
+    <artist>Kanye</artist>
+    <genre>Rap</genre>
+ </song>
+ <song>
+    <title>Jesus Walks</title>
+    <artist>Kanye</artist>
+    <genre>Rap</genre>
+ </song>
+ <song>
+    <title>Bohemian Rhapsody</title>
+    <artist>Queen</artist>
+    <genre>Rock</genre>
+ </song>
+ <song>
+    <title>Stairway to Heaven</title>
+    <artist>Led Zeppelin</artist>
+    <genre>Rock</genre>
+ </song>
+ <song>
+    <title>Smells Like Teen Spirit</title>
+    <artist>Nirvana</artist>
+    <genre>Rock</genre>
+ </song>
+ <song>
+    <title>Livin on a Prayer</title>
+    <artist>Bon Jovi</artist>
+    <genre>Rock</genre>
+ </song>
+</songs>
+ 
