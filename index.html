@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joe's Hotdogs</title>
+    <link rel="stylesheet" href="hot_dog_stylesheet.css">
+</head>
+
+<body>
+    <h1>Joe's Hotdogs</h1>
+    <hr>
+    <script>
+        // Variables        
+        const hotdog = 4;
+        const frenchFries = 3.50;
+        const soda = 1.75;
+        const discountRate = 0.9;
+        const taxRate = 0.0625;
+        let discount = 0;
+        let discountMoney = 0;
+
+        // Method to round to two decimal places
+        const rounding= num => Math.round(num * 100) / 100;
+
+        // Prompt user for input
+        let hotdogCount = parseInt(prompt("How many hotdogs do you want?"));
+        let frenchFriesCount = parseInt(prompt("How many fries do you want?"));
+        let sodaCount = parseInt(prompt("How many sodas do you want?"));
+
+        // Calculate total
+        let subtotal = (hotdog * hotdogCount) + (frenchFries * frenchFriesCount) 
+                       + (soda * sodaCount);
+
+        // Apply discount if total is greater than $20
+        if (subtotal >= 20) {
+            discount = subtotal - (subtotal * discountRate);
+            // subtotal = discount;
+        }
+        
+        // Get tax and apply to get final price
+        let tax = taxRate * (subtotal - discount);
+        let totalPrice = subtotal + tax - discount;
+
+        // Display to HTML
+        document.write("<h3>Reciept</h3>")
+        document.write("# of Hotdogs Ordered: " + hotdogCount + "<br/>");
+        document.write("# of French Fries Ordered: " + frenchFriesCount + "<br/>");
+        document.write("# of Soda's Ordered: " + sodaCount + "<br/>");
+        if (subtotal >= 20) {
+            document.write("Discount Found: " + rounding(discount) + "<br/>");
+        } else {
+            document.write("Discount not applicable. Minimum $20 order required." 
+                            + "<br/>");
+        }
+        document.write("Subtotal: " + rounding(subtotal) + "<br/>");
+        document.write("Tax: " + rounding(tax) + "<br/>");
+        document.write("Final Total: " + rounding(totalPrice) + "<br/>");
+
+
+
+    </script>
+</body>
+
+</html>
